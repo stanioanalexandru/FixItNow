@@ -1,0 +1,8 @@
+T,Popescu,Ion,1900101123456,Brasov
+T,Ionescu,Vasile,1800101123456,Bucuresti
+T,Munteanu,George,1700101123456,Cluj
+R,Diaconu,Ana,2900101123456,Bucuresti
+S,Boss,Sefu,1800101123456,Bucuresti
+X,Gresit,Tip,1990101123456,Bucuresti
+T,Prea,Mic,6200101123456,Bucuresti
+T,Scurt,CNP,123,Bucuresti

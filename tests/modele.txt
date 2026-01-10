@@ -1,0 +1,10 @@
+Samsung,QLED
+Samsung,Neo
+Arctic,Frost20
+Arctic,OldSchool
+Whirlpool,Clean6
+Whirlpool,Supreme
+LG,OLED
+Sony,Bravia
+Beko,NoFrost
+Philips,Ambilight
