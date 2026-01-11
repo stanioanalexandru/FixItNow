@@ -20,6 +20,7 @@ void afisareMeniu()
     cout << "5. Modificare Angajat" << endl;
     cout << "6. Gestiune electrocasnice" << endl;
     cout << "7. Incarca date din fisiere" << endl;
+    cout << "8. Genereaza rapoarte CSV" << endl;
     cout << "0. Iesire" << endl;
     cout << "Optiune: ";
 }
@@ -247,14 +248,13 @@ int main()
             // 1. Modele
             cout << "1. Incarcare modele..." << endl;
             svc.incarcaModeleDinFisier("./tests/modele.txt");
-            cout<<endl;
+            cout << endl;
             std::this_thread::sleep_for(std::chrono::seconds(1));
-
 
             // 2. Angajati
             cout << "2. Incarcare angajati..." << endl;
             svc.incarcaAngajatiDinFisier("./tests/angajati.txt");
-            cout<<endl;
+            cout << endl;
             std::this_thread::sleep_for(std::chrono::seconds(1));
 
             // 3. Cereri
@@ -263,10 +263,9 @@ int main()
             cout << endl;
             std::this_thread::sleep_for(std::chrono::seconds(1));
 
-
             cout << "4. Incarcare specializari tehnicieni..." << endl;
             svc.incarcaSpecializariDinFisier("./tests/specializari.txt");
-            cout<<endl;
+            cout << endl;
 
             cout << "Initializare gata! Poti rula simularea (Optiunea 4)." << endl;
             break;
@@ -277,6 +276,9 @@ int main()
             cout << "Optiune invalida!" << endl;
             break;
         }
+        case 8:
+            svc.genereazaRapoarte();
+            break;
         }
     } while (optiune != 0);
     return 0;

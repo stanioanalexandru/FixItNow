@@ -50,6 +50,7 @@ public:
     void incarcaAngajatiDinFisier(const string &numeFisier);
     void incarcaSpecializariDinFisier(const string &numeFisier);
 
+    void genereazaRapoarte();
 
     ~Service();
 };

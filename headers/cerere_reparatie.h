@@ -13,6 +13,7 @@ class CerereReparatie {
     int durataRamasa;
     double pret;
     StatusCerere status;
+    int durataTotala;
 
 public:
     CerereReparatie(Electrocasnic* aparat, tm timp, int complexitate);
@@ -20,6 +21,7 @@ public:
     int getId() const;
     int getDurata() const;
     double getPret() const;
+    int getDurataTotala() const { return durataTotala; }
     StatusCerere getStatus() const;
     Electrocasnic* getAparat() const { return aparat; }
     void scadeDurata();

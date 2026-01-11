@@ -29,8 +29,10 @@ void Tehnician::adaugaCerere(CerereReparatie* c) {
 void Tehnician::finalizeazaCerere(CerereReparatie* c, double durata) {
     totalDurataMunca += durata;
     valoareReparatii += c->getPret();
+
     for (auto it = cereriActive.begin(); it != cereriActive.end(); ++it) {
         if ((*it)->getId() == c->getId()) {
+            cereriCompletate.push_back(*it);
             cereriActive.erase(it);
             break;
         }
