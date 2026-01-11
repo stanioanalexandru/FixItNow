@@ -105,42 +105,6 @@ void Service::modificaNumeAngajat(string cnpCautat, string numeNou, string prenu
     }
 }
 
-void Service::simularePas()
-{
-    static int timp = 0;
-    timp++;
-    cout << "\n--- [Timp " << timp << "] ---" << endl;
-
-    for (auto ang : angajati)
-    {
-        Tehnician *t = dynamic_cast<Tehnician *>(ang);
-        if (t)
-        {
-            // Procesare cereri active (acceseaza vectorul intern printr-o metoda sau friend class)
-            // Nota: Pentru simplitate, presupunem o metoda publica in Tehnician sau acces direct
-            // Aici ar trebui sa iterezi prin cererile active ale tehnicianului, dar vectorul e privat in header-ul tau.
-            // Solutie: Adauga in Tehnician: vector<CerereReparatie*>& getCereriActive() { return cereriActive; }
-        }
-    }
-
-    // Alocare cereri din asteptare
-    if (!cereriAsteptare.empty())
-    {
-        CerereReparatie *c = cereriAsteptare.front();
-
-        Tehnician *bestTech = nullptr;
-        double minLoad = 999999;
-
-        for (auto ang : angajati)
-        {
-            Tehnician *t = dynamic_cast<Tehnician *>(ang);
-            // Accesam private members prin metode get
-            // Electrocasnicul trebuie accesat din cerere (adauga getAparat in CerereReparatie)
-            // if (t && t->poatePreluaCerere() && t->poateRepara(tip, marca)) { ... }
-        }
-    }
-}
-
 bool Service::verificaStaffMinim() const
 {
     int nrTehnicieni = 0;
@@ -229,7 +193,7 @@ void Service::ruleazaSimulare()
                 Tehnician *t = dynamic_cast<Tehnician *>(ang);
                 if (t)
                 {
-                    // Verificam 3 conditii:
+                    // Verific 3 conditii:
                     // A. Sa stie sa repare (Marca + Tip)
                     // B. Sa aiba < 3 cereri active
                     // C. Sa fie cel mai liber

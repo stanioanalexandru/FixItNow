@@ -1,3 +1,13 @@
+TV,Samsung,QLED,2010,2500,108cm,5
+Frigider,Arctic,Frost20,2012,1500,1,5
+MasinaSpalat,Whirlpool,Clean6,2015,1800,7,4
+TV,Sony,Bravia,2022,3000,120cm,2
+TV,LG,OLED,2021,4000,150cm,3
+TV,Samsung,Neo,2018,3500,100cm,4
+Frigider,Beko,NoFrost,2020,2000,1,3
+TV,Nei,Vechi,1999,100,50cm,5
+MasinaSpalat,Whirlpool,Supreme,2019,2200,8,4
+TV,Philips,Ambilight,2023,2500,100cm,1
 Frigider,Arctic,OldSchool,2005,800,0,5
 TV,Samsung,QLED,2020,2000,100cm,2
 TV,LG,OLED,2019,3000,140cm,3
