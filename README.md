@@ -1,3 +1,29 @@
+# FixItNow - Simulare Service Electrocasnice
+
+Acest proiect reprezintă o aplicație C++ orientată pe obiecte (OOP) care simulează activitatea unui service de electrocasnice.
+
+## Structura Proiectului
+
+* **headers/** - Fișierele header (`.h`).
+* **src/** - Fișierele sursă (`.cpp`).
+* **tests/** - Fișierele de test (`.txt`).
+* **main.cpp** - Fișierul principal.
+
+## Compilare și Rulare
+
+Deschideți terminalul în rădăcina proiectului și rulați:
+
+```bash
+g++ -Iheaders main.cpp src/*.cpp -o FixItNow
+```
+
+Pentru a rula aplicatia:
+```bash
+./FixItNow
+```
+
+
+
 # Descriere Fișiere de Test - FixItNow
 
 Acest folder conține fișierele de intrare utilizate pentru validarea funcționalităților aplicației și testarea cazurilor limită.
