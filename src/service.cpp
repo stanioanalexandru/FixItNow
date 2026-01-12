@@ -193,7 +193,7 @@ void Service::ruleazaSimulare()
                 Tehnician *t = dynamic_cast<Tehnician *>(ang);
                 if (t)
                 {
-                    // Verific 3 conditii:
+                    // Verific 2 conditii:
                     // A. Sa stie sa repare (Marca + Tip)
                     // B. Sa aiba < 3 cereri active
 
