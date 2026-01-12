@@ -38,7 +38,7 @@ int main()
     int optiune;
     do
     {
-        std::this_thread::sleep_for(std::chrono::seconds(2));
+        this_thread::sleep_for(chrono::seconds(2));
         afisareMeniu();
         cin >> optiune;
 
@@ -249,19 +249,19 @@ int main()
             cout << "1. Incarcare modele..." << endl;
             svc.incarcaModeleDinFisier("./tests/modele.txt");
             cout << endl;
-            std::this_thread::sleep_for(std::chrono::seconds(1));
+            this_thread::sleep_for(chrono::seconds(1));
 
             // 2. Angajati
             cout << "2. Incarcare angajati..." << endl;
             svc.incarcaAngajatiDinFisier("./tests/angajati.txt");
             cout << endl;
-            std::this_thread::sleep_for(std::chrono::seconds(1));
+            this_thread::sleep_for(chrono::seconds(1));
 
             // 3. Cereri
             cout << "3. Incarcare cereri..." << endl;
             svc.incarcaCereriDinFisier("./tests/cereri.txt");
             cout << endl;
-            std::this_thread::sleep_for(std::chrono::seconds(1));
+            this_thread::sleep_for(chrono::seconds(1));
 
             cout << "4. Incarcare specializari tehnicieni..." << endl;
             svc.incarcaSpecializariDinFisier("./tests/specializari.txt");

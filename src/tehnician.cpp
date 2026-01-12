@@ -67,8 +67,7 @@ void Tehnician::simuleazaTic() {
 
     cerereCurenta->scadeDurata();
     
-    cout << "   [Tehnician " << nume << "] lucreaza la cererea ID " << cerereCurenta->getId() 
-         << ". Timp ramas: " << cerereCurenta->getDurata() << endl;
+    cout << "   [Tehnician " << nume << "] lucreaza la cererea ID " << cerereCurenta->getId() << ". Timp ramas: " << cerereCurenta->getDurata() << endl;
 
     if (cerereCurenta->getDurata() <= 0) {
         cerereCurenta->finalizeaza();

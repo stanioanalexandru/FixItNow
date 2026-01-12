@@ -7,8 +7,7 @@ class Frigider : public Electrocasnic
     bool areCongelator;
 
 public:
-    Frigider(const string &marca, const string &model, int an, double pret, bool congelator)
-        : Electrocasnic("Frigider", marca, model, an, pret), areCongelator(congelator) {}
+    Frigider(const string &marca, const string &model, int an, double pret, bool congelator) : Electrocasnic("Frigider", marca, model, an, pret), areCongelator(congelator) {}
 
     void afisare() const override
     {
@@ -21,8 +20,7 @@ class Televizor : public Electrocasnic
     string diagonala;
 
 public:
-    Televizor(const string &marca, const string &model, int an, double pret, string diag)
-        : Electrocasnic("TV", marca, model, an, pret), diagonala(diag) {}
+    Televizor(const string &marca, const string &model, int an, double pret, string diag): Electrocasnic("TV", marca, model, an, pret), diagonala(diag) {}
 
     void afisare() const override
     {
@@ -35,8 +33,7 @@ class MasinaSpalat : public Electrocasnic
     int capacitateKg;
 
 public:
-    MasinaSpalat(const string &marca, const string &model, int an, double pret, int cap)
-        : Electrocasnic("MasinaSpalat", marca, model, an, pret), capacitateKg(cap) {}
+    MasinaSpalat(const string &marca, const string &model, int an, double pret, int cap): Electrocasnic("MasinaSpalat", marca, model, an, pret), capacitateKg(cap) {}
 
     void afisare() const override
     {

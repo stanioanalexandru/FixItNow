@@ -13,13 +13,7 @@ protected:
     double pretCatalog;
 
 public:
-    Electrocasnic(const string& tip,
-                  const string& marca,
-                  const string& model,
-                  int an,
-                  double pret)
-        : tip(tip), marca(marca), model(model),
-          anFabricatie(an), pretCatalog(pret) {}
+    Electrocasnic(const string& tip,const string& marca,const string& model,int an,double pret): tip(tip), marca(marca), model(model),anFabricatie(an), pretCatalog(pret) {}
 
     virtual ~Electrocasnic() {}
     virtual void afisare() const = 0;

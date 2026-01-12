@@ -14,8 +14,7 @@ protected:
     static int generatorId;
 
 public:
-    Angajat(string nume, string prenume, string cnp,
-            tm dataAngajarii, string oras);
+    Angajat(string nume, string prenume, string cnp,tm dataAngajarii, string oras);
     virtual ~Angajat() = default;
     int getId() const;
     string getCNP() const;

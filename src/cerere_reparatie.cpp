@@ -2,8 +2,7 @@
 
 int CerereReparatie::generatorId = 1;
 
-CerereReparatie::CerereReparatie(Electrocasnic *ap, tm timp, int complexitate)
-    : aparat(ap), timestamp(timp), complexitate(complexitate), status(StatusCerere::ASTEPTARE)
+CerereReparatie::CerereReparatie(Electrocasnic *ap, tm timp, int complexitate): aparat(ap), timestamp(timp), complexitate(complexitate), status(StatusCerere::ASTEPTARE)
 {
     id = generatorId++;
 

@@ -17,7 +17,6 @@ class CerereReparatie {
 
 public:
     CerereReparatie(Electrocasnic* aparat, tm timp, int complexitate);
-
     int getId() const;
     int getDurata() const;
     double getPret() const;

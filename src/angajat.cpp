@@ -77,6 +77,5 @@ void Angajat::modificaNume(string numeNou, string prenumeNou) {
 }
 
 void Angajat::afisare() const {
-    cout << "ID: " << id << " | " << nume << " " << prenume
-              << " | CNP: " << cnp << " | Oras: " << oras << " | Data Angajare: " << (1900 + dataAngajarii.tm_year) << "-" << (dataAngajarii.tm_mon + 1) << "-" << dataAngajarii.tm_mday << "\n";
+    cout << "ID: " << id << " | " << nume << " " << prenume<< " | CNP: " << cnp << " | Oras: " << oras << " | Data Angajare: " << (1900 + dataAngajarii.tm_year) << "-" << (dataAngajarii.tm_mon + 1) << "-" << dataAngajarii.tm_mday << "\n";
 }
