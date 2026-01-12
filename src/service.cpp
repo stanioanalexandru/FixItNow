@@ -196,7 +196,6 @@ void Service::ruleazaSimulare()
                     // Verific 3 conditii:
                     // A. Sa stie sa repare (Marca + Tip)
                     // B. Sa aiba < 3 cereri active
-                    // C. Sa fie cel mai liber
 
                     bool compatibil = t->poateRepara(ap->getTip(), ap->getMarca());
                     bool areLoc = t->poatePreluaCerere(); 
